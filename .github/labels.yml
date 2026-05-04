@@ -1,0 +1,43 @@
+- name: feedback
+  color: D4C5F9
+  description: General user feedback submitted through this repository
+
+- name: mcp
+  color: 0E8A16
+  description: Related to MCP server behavior, tooling, or integrations
+
+- name: feature-request
+  color: A2EEEF
+  description: Requested new capability or product improvement
+
+- name: needs-repro
+  color: FBCA04
+  description: More precise reproduction steps are needed
+
+- name: needs-artifacts
+  color: FEF2C0
+  description: Logs, screenshots, traces, or other artifacts are needed
+
+- name: client:claude
+  color: C5DEF5
+  description: Report involves Claude as the MCP client
+
+- name: client:openai
+  color: BFDADC
+  description: Report involves OpenAI as the MCP client
+
+- name: client:codex
+  color: BFD4F2
+  description: Report involves Codex as the MCP client
+
+- name: client:copilot
+  color: 5319E7
+  description: Report involves Copilot as the MCP client
+
+- name: client:windsurf
+  color: 1D76DB
+  description: Report involves Windsurf as the MCP client
+
+- name: client:other
+  color: EDEDED
+  description: Report involves another MCP client

@@ -1,0 +1,58 @@
+name: Question
+description: Ask about MCP server behavior, setup, supported clients, or expected workflows
+title: "[Question]: "
+labels:
+  - feedback
+  - question
+  - mcp
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for your question.
+
+        Include enough context for us to understand what you are trying to do and where you are getting stuck.
+
+        If your question is about a specific client integration, include the client name and version.
+  - type: textarea
+    id: question
+    attributes:
+      label: Question
+      description: What would you like clarified?
+      placeholder: Ask your question here.
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: What were you trying to do when this question came up?
+      placeholder: Describe the workflow, setup, or scenario.
+    validations:
+      required: true
+  - type: dropdown
+    id: client_app
+    attributes:
+      label: Client app
+      description: If relevant, which app are you using?
+      options:
+        - Not applicable
+        - Claude
+        - OpenAI
+        - Codex
+        - Copilot
+        - Windsurf
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: versions
+    attributes:
+      label: Relevant versions
+      placeholder: Client version, MCP server version, package version, etc.
+  - type: textarea
+    id: references
+    attributes:
+      label: Relevant examples or references
+      description: Link to docs, screenshots, logs, or examples if they help explain the question.
+      placeholder: Optional supporting details.

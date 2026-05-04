@@ -1,0 +1,118 @@
+name: Bug report
+description: Report MCP server bugs, client integration failures, or unexpected behavior
+title: "[Bug]: "
+labels:
+  - feedback
+  - bug
+  - mcp
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for filing a bug report.
+
+        If this happened while using our MCP server through a client app such as Claude, OpenAI, Codex, Copilot, or Windsurf, include as many relevant artifacts as you can safely share.
+
+        Please redact secrets and sensitive data before submitting.
+
+        Reports that include reproduction steps, expected vs actual behavior, and logs or screenshots are the fastest for us to investigate.
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: Briefly describe the problem.
+      placeholder: A short description of what is going wrong.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: List the exact steps needed to reproduce the issue.
+      placeholder: |
+        1. Open...
+        2. Connect...
+        3. Run...
+        4. Observe...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      placeholder: What should have happened?
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      placeholder: What actually happened?
+    validations:
+      required: true
+  - type: dropdown
+    id: client_app
+    attributes:
+      label: Client app
+      description: Which app were you using when the problem occurred?
+      options:
+        - Claude
+        - OpenAI
+        - Codex
+        - Copilot
+        - Windsurf
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: client_version
+    attributes:
+      label: Client app version
+      placeholder: e.g. 1.2.3
+  - type: input
+    id: server_version
+    attributes:
+      label: MCP server version or commit
+      placeholder: e.g. v0.4.0 or git SHA
+  - type: input
+    id: os
+    attributes:
+      label: OS and version
+      placeholder: e.g. macOS 15.4, Windows 11, Ubuntu 24.04
+  - type: dropdown
+    id: reproducible
+    attributes:
+      label: Reproducibility
+      options:
+        - Always
+        - Sometimes
+        - Once
+        - Unknown
+    validations:
+      required: true
+  - type: input
+    id: timestamp
+    attributes:
+      label: Approximate timestamp
+      description: Include timezone if possible.
+      placeholder: e.g. 2026-05-04 10:32 CDT
+  - type: textarea
+    id: artifacts
+    attributes:
+      label: Artifacts
+      description: Paste or describe any useful supporting artifacts.
+      placeholder: |
+        Include anything relevant, such as:
+        - Error messages
+        - Screenshots
+        - Tool call traces
+        - Request/response payloads
+        - Server logs
+        - Browser console logs
+        - Network traces or HAR files
+        - Minimal config to reproduce
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: Additional context
+      placeholder: Anything else that might help us understand the issue.

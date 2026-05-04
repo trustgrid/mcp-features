@@ -1,0 +1,67 @@
+name: Feature request
+description: Suggest an MCP server capability, workflow improvement, or client-facing enhancement
+title: "[Feature]: "
+labels:
+  - feedback
+  - enhancement
+  - mcp
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting an improvement.
+
+        The most helpful requests explain the problem, who it affects, and why the current behavior is not enough.
+
+        Requests tied to a concrete MCP workflow or client limitation are easier to evaluate and prioritize.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or opportunity
+      description: What problem are you trying to solve?
+      placeholder: Describe the user need, frustration, or workflow gap.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: What would you like to happen instead?
+      placeholder: Describe the feature or improvement you want.
+    validations:
+      required: true
+  - type: textarea
+    id: use_case
+    attributes:
+      label: Use case
+      description: Who would use this and in what scenario?
+      placeholder: Explain when this feature would be valuable.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: What workarounds or alternatives have you tried?
+      placeholder: Optional, but helpful.
+  - type: dropdown
+    id: related_client
+    attributes:
+      label: Related client app
+      description: If this request is tied to a client experience, select it here.
+      options:
+        - Not client-specific
+        - Claude
+        - OpenAI
+        - Codex
+        - Copilot
+        - Windsurf
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: Additional context
+      description: Add mockups, screenshots, examples, or related issues.
+      placeholder: Optional supporting details.
