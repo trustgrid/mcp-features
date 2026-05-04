@@ -1,16 +1,12 @@
 # MCP Feedback Repository
 
-This repository is the public intake point for feedback about our Svelte-based MCP experience.
+This repository is the public intake point for feedback about our MCP server.
 
 Use it to submit:
 
 - Bug reports
 - Questions
 - Feature requests
-
-## Purpose
-
-The goal of this repository is to make it easy for users to share actionable feedback in one place. Well-structured reports help us reproduce problems, understand product gaps, and prioritize improvements across the MCP server and the apps that connect to it.
 
 ## What To File
 
@@ -41,9 +37,8 @@ Open a feature request when you want new functionality, better workflows, or imp
 
 Examples:
 
-- New feedback submission flows
-- Better debugging or observability for MCP issues
-- Support for more client-side metadata or artifacts
+- Expose a new tool
+- Change the formatting of a tool's output
 
 ## Reporting MCP Server Bugs Effectively
 
@@ -96,13 +91,3 @@ Before submitting, remove or redact:
 - Proprietary prompts or customer content you are not allowed to share
 
 If you believe an issue is security-sensitive, do not open a public issue. Follow your private security reporting process instead.
-
-## Using The Templates
-
-Please use the matching issue template when possible:
-
-- `Bug report`
-- `Question`
-- `Feature request`
-
-The templates are designed to collect the details that help us respond quickly.
