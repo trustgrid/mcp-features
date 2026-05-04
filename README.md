@@ -7,6 +7,9 @@ Use it to submit:
 - Bug reports
 - Questions
 - Feature requests
+- Docs requests
+
+You can view the MCP documentation at [mcp.trustgrid.io/docs](mcp.trustgrid.io/docs).
 
 ## What To File
 
@@ -24,7 +27,7 @@ Examples:
 ### Questions
 
 Open a question when you are unsure how something is expected to work and need clarification, and it's
-not explained well (or at all) at (mcp.trustgrid.io/docs)[mcp.trustgrid.io/docs].
+not explained well (or at all) at [mcp.trustgrid.io/docs](mcp.trustgrid.io/docs).
 
 Examples:
 
