@@ -23,7 +23,8 @@ Examples:
 
 ### Questions
 
-Open a question when you are unsure how something is expected to work and need clarification.
+Open a question when you are unsure how something is expected to work and need clarification, and it's
+not explained well (or at all) at (mcp.trustgrid.io/docs)[mcp.trustgrid.io/docs].
 
 Examples:
 
